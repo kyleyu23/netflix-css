@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    /* border:1px solid green; */
+
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    min-height:100% !important;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Netflix-rg";
+    src: url("./media/fonts/NetflixSans_W_Rg.woff2");
+}
+
+@font-face {
+    font-family: "Netflix-md";
+    src: url("./media/fonts/NetflixSans_W_Md.woff2");
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height:100%;
+}
+
+.image-container img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.image-container {
+    position:relative;
+    font-family: "Netflix-md", sans-serif;
+}
+
+.image-container-inner {
+    background-color: black;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    height:20%;
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 0.25rem;
+    column-gap: 0.5rem;
+
+}
+
+.image-container-inner img:nth-of-type(2){
+    height: 50%;
+}
+
+.description {
+    font-family: "Netflix-rg", sans-serif;
+}
+.description :nth-child(1){
+    font-weight: 700;
+}
+.description :nth-child(2){
+    font-weight: 400;
+}
+.text-1 {
+    color: #0071eb;
+}
